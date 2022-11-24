@@ -245,16 +245,6 @@ class DQNSolver(BaseSolver):
                                  name="conv1",
                                 )
 
-                                #  conv1 = tf.keras.layers.Conv2D(visual_state_2d,
-                                #  filters=32,
-                                #  kernel_size=3,
-                                #  strides=1,
-                                #  padding='valid',
-                                #  activation=self._leaky_relu,
-                                #  kernel_initializer=w_init_,
-                                #  bias_initializer=b_init_,
-                                #  name="conv1")
-
         conv2 = tf.compat.v1.layers.conv2d(inputs=conv1,
                                  filters=64,
                                  kernel_size=3,
